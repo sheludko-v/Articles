@@ -15,9 +15,7 @@
 <div class="container-fluid">
     <div class="row no-gutter">
         <div class="col-12">
-            <header>
-                <img class="logo d-block img-fluid mx-auto" src="static/images/header.png" alt="Logo"/>
-            </header>
+            <header class="pd-parallax"></header>
             <nav class="navbar navbar-expand-lg navbar-dark navbar_top" style="background-color: #1F100D;">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">

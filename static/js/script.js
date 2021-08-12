@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 250) {
             document.querySelector(".navbar_top").classList.add("fixed-top");
             navbar_height = document.querySelector(".navbar").offsetHeight;
             document.body.style.paddingTop = navbar_height + "px";
@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+

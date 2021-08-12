@@ -34,6 +34,15 @@ body {
     box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
 }
 
+.pd-parallax {
+    position: relative;
+    opacity: 0.85;
+    background: url("../images/header.png") no-repeat fixed;
+    min-height: 250px;
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (max-width: 600px) {
     .logoReg {
         font-size: 0;
@@ -60,6 +69,10 @@ body {
     .logoAd:after {
         content: "АДМИНИСТРАЦИЯ";
         font-size: initial;
+    }
+
+    .pd-parallax {
+        display: none;
     }
 }
 

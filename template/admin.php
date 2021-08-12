@@ -31,7 +31,13 @@
 <div class="container" style="margin-top: 50px;">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 style="margin-bottom: 50px;">Личный кабинет</h2>
+            <h3 style="margin-bottom: 100px;">Личный кабинет пользователя
+                • <?php
+                $query = "SELECT fio FROM users WHERE id=" . $_COOKIE['id'];
+                $result = select($query);
+                echo $result[0]['fio'];
+              ?> •
+            </h3>
             <div class="card-deck">
               <?php echo $out; ?>
             </div>

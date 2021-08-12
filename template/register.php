@@ -12,7 +12,7 @@
       $err[] = "Логин существует!";
     }
     if (count($err) === 0) {
-      createUser($_POST['login'], $_POST['password']);
+      createUser($_POST['login'], $_POST['password'], $_POST['fio']);
       header('Location: /login');
       exit();
     } else {
@@ -36,6 +36,7 @@
             <h2>Регистрация нового пользователя</h2>
             <form method="POST" style="margin-top: 20px;">
                 <div class="form-group">
+                    <p><input type="text" name="fio" placeholder="Ф.И.О." required></p>
                     <p><input type="text" name="login" placeholder="Логин" required></p>
                     <p><input type="password" name="password" placeholder="Пароль" required></p>
                     <p><input class="btn myBtn" type="submit" name="submit" value="Регистрация"></p>

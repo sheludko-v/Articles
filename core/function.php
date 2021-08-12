@@ -26,10 +26,11 @@
     return true;
   }
 
-  function createUser($login, $password) {
+  function createUser($login, $password, $fio) {
     $password = md5(md5(trim($password)));
     $login = trim($login);
-    $query = "INSERT INTO users SET login='" . $login . "', password='" . $password . "'";
+    $fio = trim($fio);
+    $query = "INSERT INTO users SET login='" . $login . "', password='" . $password . "', fio='" . $fio . "'";
     return execQuery($query);
   }
 

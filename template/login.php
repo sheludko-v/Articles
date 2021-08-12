@@ -23,10 +23,28 @@
   }
 ?>
 
-<h2>Логин</h2>
-<form method="POST">
-    <p>Login: <input type="text" name="login" required></p>
-    <p>Password: <input type="password" name="password" required></p>
-    <p>Прикреплять IP: <input type="checkbox" name="ip"></p>
-    <p><input type="submit" name="submit" value="Войти"></p>
-</form>
+<?php
+  require_once 'headers/header_log.php';
+?>
+
+<div class="container" style="margin-top: 150px;">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 text-center">
+            <h2>Вход в личный кабинет</h2>
+            <form method="POST" style="margin-top: 20px;">
+                <div class="form-group">
+                    <p><input type="text" name="login" placeholder="Логин" required></p>
+                    <p><input type="password" name="password" placeholder="Пароль" required></p>
+                    <p>Привязка к IP  <input type="checkbox" name="ip"></p>
+                    <p><input class="btn myBtn" type="submit" name="submit" value="Войти"></p>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+<?php
+  require_once 'footer.php';
+?>

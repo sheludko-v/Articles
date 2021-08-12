@@ -1,0 +1,31 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.no-gutter > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
+
+.myImg {
+    width: 150px;
+    height: 150px;
+}
+
+.myBtn {
+    background-color: #1F100D;
+    color: white;
+    border: 1px solid white;
+}
+
+.myBtn:hover {
+    background-color: #1F100D;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+}

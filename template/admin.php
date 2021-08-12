@@ -8,17 +8,43 @@
   }
   $out = '';
   for ($i = 0; $i < count($result); $i++) {
-    $out .= '<div>';
-    $out .= '<p>' . $result[$i]['title'] . '</p>';
-    $out .= '<img src="/static/images/' . $result[$i]['image'] . '" width=100>';
-    $out .= '<p><a href="/admin/update/' . $result[$i]['id'] . '">Обновить</a></p>';
-    $out .= '<p><a href="/admin/delete/' . $result[$i]['id'] . '" onclick="return confirm(\'Точно???\')">Удалить</a></p>';
+    $out .= '<div class="col-sm-4 col-md-4" style="margin-bottom: 50px;">';
+    $out .= '<div class="card text-center rounded">';
+    $out .= '<figure style="margin-top: 20px;">';
+    $out .= '<img class="img-fluid myImg rounded-circle" src="/static/images/' . $result[$i]['image'] . '">';
+    $out .= '</figure>';
+    $out .= '<div class="card-body">';
+    $out .= '<h4 class="card-text" style="margin-bottom: 20px;">' . $result[$i]['title'] . '</h4>';
+    $out .= '<p><a class="btn myBtn" href="/admin/update/' . $result[$i]['id'] . '">Обновить</a></p>';
+    $out .= '<p><a class="btn myBtn" href="/admin/delete/' . $result[$i]['id'] . '" onclick="return confirm(\'Вы уверены?\')">Удалить</a></p>';
+    $out .= '</div>';
+    $out .= '</div>';
     $out .= '</div>';
   }
 
 ?>
-    <h1>Админ панель</h1>
-    <div><a href="/admin/create">Создать</a></div>
-    <div><a href="/logout">Выйти</a></div>
+
 <?php
-  echo $out;
+  require_once 'headers/header_admin.php';
+?>
+
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 style="margin-bottom: 50px;">Личный кабинет</h2>
+            <div class="card-deck">
+              <?php echo $out; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php
+  require_once 'footer.php';
+?>
+
+
+
+
+

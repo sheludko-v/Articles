@@ -36,7 +36,7 @@ body {
     }
 
     .logoReg:after {
-        content: "STIGMAT ONLINE | РЕГИСТРАЦИЯ";
+        content: "РЕГИСТРАЦИЯ";
         font-size: initial;
     }
 
@@ -45,7 +45,7 @@ body {
     }
 
     .logoLog:after {
-        content: "STIGMAT ONLINE | АВТОРИЗАЦИЯ";
+        content: "АВТОРИЗАЦИЯ";
         font-size: initial;
     }
 
@@ -54,7 +54,7 @@ body {
     }
 
     .logoAd:after {
-        content: "STIGMAT ONLINE | АДМИН";
+        content: "АДМИНИСТРАЦИЯ";
         font-size: initial;
     }
 }

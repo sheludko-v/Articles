@@ -7,7 +7,7 @@
 
   for ($i = 0; $i < count($result); $i++) {
     $out .= '<div class="col-sm-4 col-md-4" style="margin-bottom: 50px;">';
-    $out .= '<div class="card text-center rounded">';
+    $out .= '<div class="card text-center rounded myBox">';
     $out .= '<figure style="margin-top: 20px;">';
     $out .= '<img class="img-fluid myImg rounded-circle" src="/static/images/' . $result[$i]['image'] . '">';
     $out .= '</figure>';

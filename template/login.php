@@ -27,7 +27,7 @@
   require_once 'headers/header_log.php';
 ?>
 
-<div class="container" style="margin-top: 150px;">
+<div class="container" style="margin-top: 80px;">
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4 text-center">

@@ -33,10 +33,17 @@
         <div class="col-lg-12 text-center">
             <h3 style="margin-bottom: 100px;">Личный кабинет пользователя
                 • <?php
-                $query = "SELECT fio FROM users WHERE id=" . $_COOKIE['id'];
+                $query = "SELECT fio, ip FROM users WHERE id=" . $_COOKIE['id'];
                 $result = select($query);
                 echo $result[0]['fio'];
+                echo '';
+                echo '';
+                echo '';
               ?> •
+                IP Адрес:
+                  <?php
+                    echo $_SERVER['REMOTE_ADDR'];
+                  ?> •
             </h3>
             <div class="card-deck">
               <?php echo $out; ?>

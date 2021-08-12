@@ -7,7 +7,7 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="/static/css/style.css">
   <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/ico">
-  <title>Stigmat Blog</title>
+  <title>Stigmat ONLINE | Регистрация</title>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
                 data-target="#bs-example-navbar-collapse-1">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/">STIGMAT BLOG</a>
+          <a class="navbar-brand" href="/"><span class="logoReg">STIGMAT ONLINE | РЕГИСТРАЦИЯ</span></a>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">

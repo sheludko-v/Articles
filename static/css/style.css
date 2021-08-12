@@ -29,3 +29,35 @@ body {
     color: darkgoldenrod;
     border: 1px solid darkgoldenrod;
 }
+
+@media screen and (max-width: 600px) {
+    .logoReg {
+        font-size: 0;
+    }
+
+    .logoReg:after {
+        content: "STIGMAT ONLINE | РЕГИСТРАЦИЯ";
+        font-size: initial;
+    }
+
+    .logoLog {
+        font-size: 0;
+    }
+
+    .logoLog:after {
+        content: "STIGMAT ONLINE | АВТОРИЗАЦИЯ";
+        font-size: initial;
+    }
+
+    .logoAd{
+        font-size: 0;
+    }
+
+    .logoAd:after {
+        content: "STIGMAT ONLINE | АДМИН";
+        font-size: initial;
+    }
+}
+
+
+

@@ -24,10 +24,21 @@ body {
     border: 1px solid white;
 }
 
+.myBtnDel {
+    background-color: #5a1b0d;
+    color: white;
+    border: 1px solid white;
+}
+
+.myBtnDel:hover {
+    background-color: #662010;
+    color: white;
+    border: 1px solid white;
+}
+
 .myBtn:hover {
-    background-color: #1F100D;
-    color: darkgoldenrod;
-    border: 1px solid darkgoldenrod;
+    background-color: #351e19;
+    color: white;
 }
 
 .myBox:hover {

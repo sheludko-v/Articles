@@ -15,6 +15,7 @@
     $out .= '</figure>';
     $out .= '<div class="card-body">';
     $out .= '<h4 class="card-text" style="margin-bottom: 20px;">' . $result[$i]['title'] . '</h4>';
+    $out .= '<p>Категория: <strong>' . $result2[$i]['title'] . '</strong></p>';
     $out .= '<a class="btn myBtn" href="/admin/update/' . $result[$i]['id'] . '">Обновить</a>';
     $out .= '<a class="btn myBtnDel" href="/admin/delete/' . $result[$i]['id'] . '" onclick="return confirm(\'Вы уверены?\')">Удалить</a>';
     $out .= '</div>';

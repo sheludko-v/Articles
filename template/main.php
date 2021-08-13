@@ -12,6 +12,7 @@
     $out .= '<img class="img-fluid myImg rounded-circle" src="/static/images/' . $result[$i]['image'] . '">';
     $out .= '</figure>';
     $out .= '<h3>' . $result[$i]['title'] . '</h3>';
+    $out .= '<p>Категория: <strong>' . $result2[$i]['title'] . '</strong></p>';
     $out .= '<div class="card-body">';
     $out .= '<p class="card-text">' . $result[$i]['descr_min'] . '</p>';
     $out .= '<a class="btn myBtn" href="/article/' . $result[$i]['url'] . '">Читать полностью</a>';

@@ -16,8 +16,10 @@
 
   switch ($route) {
     case ($route[0] == ''):
-      $query = 'select * from info';
+      $query = 'SELECT * FROM info';
       $result = select($query);
+      $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid';
+      $result2 = select($query2);
       require_once 'template/main.php';
       break;
     case ($route[0] == 'article' && isset($route[1])):
@@ -65,6 +67,8 @@
     case ($route[0] == 'admin'):
       $query = 'SELECT * FROM info';
       $result = select($query);
+      $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid';
+      $result2 = select($query2);
       require_once 'template/admin.php';
       break;
     case ($route[0] == 'logout'):

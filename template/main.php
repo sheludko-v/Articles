@@ -27,8 +27,27 @@
   require_once 'headers/header.php';
 ?>
 
+
 <div class="container" style="margin-top: 50px;">
     <div class="row">
+        <div class="sort ml-auto">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <select name='select'>
+                      <?php
+                        $query = "SELECT title FROM category";
+                        $category = select($query);
+                        for ($i = 0; $i < count($category); $i++) {
+                          echo '<option>' . $category[$i]['title'] . '</option>>';
+                        }
+                        echo '<pre>';
+                        print_r($_POST['select']);
+                      ?>
+                    </select>
+                    <input type="submit" name="submit" value="Go">
+                </div>
+            </form>
+        </div>
         <div class="card-deck">
           <?php echo $out; ?>
         </div>

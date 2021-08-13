@@ -18,7 +18,7 @@
       header("Location: /admin");
       exit();
     } else {
-      echo '<h3 style="color: red">Вы неправильно ввели логин или пароль!</h3>';
+      echo '<script>alert("Вы неправильно ввели логин или пароль!");</script>';
     }
   }
 ?>

@@ -16,10 +16,10 @@
 
   switch ($route) {
     case ($route[0] == ''):
-      $query = 'SELECT * FROM info';
+      $query = 'SELECT * FROM info ORDER BY id DESC';
       $result = select($query);
-      $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid';
-      $result2 = select($query2);
+      $query_cat = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid ORDER BY id DESC';
+      $result_cat = select($query_cat);
       require_once 'template/main.php';
       break;
     case ($route[0] == 'article' && isset($route[1])):
@@ -65,9 +65,9 @@
       }
       break;
     case ($route[0] == 'admin'):
-      $query = 'SELECT * FROM info';
+      $query = 'SELECT * FROM info ORDER BY id DESC';
       $result = select($query);
-      $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid';
+      $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid  ORDER BY id DESC';
       $result2 = select($query2);
       require_once 'template/admin.php';
       break;

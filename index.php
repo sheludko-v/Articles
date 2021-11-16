@@ -18,8 +18,15 @@ switch ($route) {
     case ($route[0] == ''):
         $query = 'SELECT * FROM info ORDER BY id DESC;';
         $result = select($query);
-        $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid';
+        $query2 = 'SELECT info.*, category.title FROM info, category WHERE category.id = info.cid ORDER BY id DESC;';
         $result2 = select($query2);
+
+        $search = @$_GET['search'];
+        $search = trim(@$search);
+        $search = strip_tags(@$search);
+        $queryS = "SELECT * FROM info WHERE title LIKE '%$search%' OR descr_min LIKE '%$search%' OR description LIKE '%$search% '";
+        $resultS = select($queryS);
+
         require_once 'template/main.php';
         break;
     case ($route[0] == 'article' && isset($route[1])):

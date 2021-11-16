@@ -35,8 +35,8 @@
                         </li>
 
                     </ul>
-                    <form class="ml-3 form-inline" name="search" method="post" action="./search.php">
-                        <input class="form-control" type="search" name="query" placeholder="Поиск...">
+                    <form class="ml-3 form-inline">
+                        <input class="form-control" type="search" name="search" placeholder="Поиск...">
                         <button class="noBtn" type="submit">Найти</button>
                     </form>
 

@@ -25,32 +25,32 @@ for ($i = 0; $i < count($result); $i++) {
 
 ?>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col mb-5 sort ml-auto">
-            <select class="form-control form-control" onchange="window.location.href = this.options[this.selectedIndex].value">
-                <option value="">Выбрать категорию...</option>
-                <?php
-                $query3 = 'SELECT * FROM category';
-                $result3 = select($query3);
-                foreach ($result3 as $key => $item): ?>
-                    <option value="<?= $item['url']; ?>">
-                        <?= $item['title']; ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3 mb-5 sort ml-auto">
+                <select class="form-control form-control"
+                        onchange="window.location.href = this.options[this.selectedIndex].value">
+                    <option value="">Выбрать категорию...</option>
+                    <?php
+                    $query3 = 'SELECT * FROM category';
+                    $result3 = select($query3);
+                    foreach ($result3 as $key => $item): ?>
+                        <option value="<?= $item['url']; ?>">
+                            <?= $item['title']; ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
         </div>
         <div class="row">
             <div class="col">
-                <div class="card-deck myCard">
+                <div class="card-deck">
                     <?php
                     echo $out; ?>
                 </div>
             </div>
         </div>
-
     </div>
-</div>
 
 <?php
 require_once 'footer.php';

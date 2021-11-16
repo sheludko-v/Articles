@@ -25,7 +25,7 @@ for ($i = 0; $i < count($result); $i++) {
 
 ?>
 
-<div class="container" style="margin-top: 50px;">
+<div class="container mt-5">
     <div class="row">
         <div class="col mb-5 sort ml-auto">
             <select class="form-control form-control" onchange="window.location.href = this.options[this.selectedIndex].value">
@@ -40,9 +40,18 @@ for ($i = 0; $i < count($result); $i++) {
                 <?php endforeach; ?>
             </select>
         </div>
-        <div class="card-deck">
-            <?php
-            echo $out; ?>
+        <div class="row">
+            <div class="col">
+                <div class="card-deck myCard">
+                    <?php
+                    echo $out; ?>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
+
+<?php
+require_once 'footer.php';
+?>

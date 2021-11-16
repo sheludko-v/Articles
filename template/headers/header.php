@@ -35,12 +35,11 @@
                         </li>
 
                     </ul>
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Введите ваш запрос...">
-                        <button class="btn myBtn my-2 my-sm-0" type="submit">
-                            Поиск
-                        </button>
+                    <form class="ml-3 form-inline" name="search" method="post" action="./search.php">
+                        <input class="form-control" type="search" name="query" placeholder="Поиск...">
+                        <button class="noBtn" type="submit">Найти</button>
                     </form>
+
                 </div>
             </nav>
         </div>
